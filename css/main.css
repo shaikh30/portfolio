@@ -1,5 +1,6 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300');
 *{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -7,17 +8,21 @@
 	box-sizing: border-box;
 }
 
+body{
+	background-color: #fff;
+}
+
+
 .top_container{
 	display: flex;
 	justify-content: space-between;
 
 }
-
-.top_container img{
-	width:100%;
-	max-width: 150px;
-
+.right_head{
+	padding-top: 80px;
 }
+
+
 
 .hero{
 	display: flex;
@@ -28,6 +33,7 @@
 .hero img{
 	width: 100%;
 	max-width: 900px;
+	margin-top: 30px;
 }
 .main_container{
 	display: flex;
@@ -38,65 +44,97 @@
 
 }
 
-.main1, .main2, .main3{
+.main1, .main2, .main3,{
 	width: 30%;
-	padding:calc(100%-90%);
 }
 
+header{
+	font-size: 100px;
+	font-family: 'Lobster', cursive;
+	color: #000;
+	text-align: center;
+	padding:80px 20px 0px  20px;
+	text-shadow: 9px 3px 12px rgb(69, 66, 66);
 
-
+}
 
 
 h1,h4{
 	text-align: right;
+	text-transform: uppercase;
 }
 
 h1{
 	font-size: 50px;
-	font-family: arial;
-}
-h4{
-	font-size: 30px;
-	margin-top: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+    text-shadow: 2px 3px 7px rgb(14, 13, 13);
 	margin-bottom: 0;
 
 }
-hr{
+h4{
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #000;
 	margin-top: 0;
 }
 
+hr{
+	margin-top: 0;
+	border-bottom: 3px solid #c6c2c2;
+
+}
+
+h2{
+	text-shadow: 0px -3px 8px black;
+
+}
+
+h2,h3,p{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+
+}
 
 
 
-@media screen and (min-width: 300px) and (max-width: 760px) {
+
+@media screen and (min-width: 300px) and (max-width: 899px) {
 	h1{
-		font-size:23px;
-		padding: 3px;
+		font-size:30px;
+		margin-bottom: 0;
 	}
 	h4{
-		font-size: 16.5px;
-		padding: 3px;
+		font-size:20px;
+/*		margin-bottom: 0;
+*/	}
+
+	header{
+		padding-right: 10px;
 	}
 
 	.right_head{
-		padding-top: 60px;
+		padding-top: 100px;
 	}
+
 	
-	.main1, .main2, .main3{
-	width: 96%;
+	
+	.main1, .main2, .main3, .main4{
+	width: 100%;
+	}
+
+	.main1 img,.main2 img,.main3 img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
 
 
-@media screen and (min-width: 761px) and (max-width: 899px) {
 
-	.main1, .main2, .main3{
-	width: 45%;
-}
-
-
-}
 
 @media screen and (min-width: 900px){
 	.container{
