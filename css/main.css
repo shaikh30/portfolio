@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300');
 
-*{
+* {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 /*top container*/
 
-.top_container{
+.top-container {
 	display: flex;
 	justify-content: space-between;
 
@@ -18,20 +18,20 @@
 
 /*right heading container*/
 
-.right_head{
+.right-head {
 	padding-top: 10px;
 	padding-right: 10px;
 }
 
 /*hero image*/
 
-.hero{
+.hero {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.hero img{
+.hero img {
 	width: 100%;
 	max-width: 900px;
 	margin-top: 30px;
@@ -39,20 +39,25 @@
 
 /*information container*/
 
-.main_container{
+.main-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.main1, .main2, .main3{
+.main1, .main2, .main3 {
 	width: 30%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*logo*/
 
-header{
+header {
 	font-size: 100px;
 	font-family: 'Lobster', cursive;
 	color: #000;
@@ -63,12 +68,12 @@ header{
 
 /*top headings*/
 
-h1,h4{
+h1,h4 {
 	text-align: right;
 	text-transform: uppercase;
 }
 
-h1{
+h1 {
 	font-size: 50px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -77,7 +82,7 @@ h1{
 	margin-top: 20px;
 }
 
-h4{
+h4 {
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
@@ -87,81 +92,96 @@ h4{
 
 /*information headings*/
 
-h2{
+h2 {
 	padding: 20px;
     text-shadow: -2px 3px 4px black;
 }
 
-h3{
+h3 {
 	padding-top: 20px;
 }
 
-h2,h3,p{
+h2,h3,p {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
 
-hr{
+hr {
 	margin-top: 0;
 	border-bottom: 3px solid #c6c2c2;
 }
 
 /*links to projects*/
 
-a{
+a {
 	text-decoration: none;
 	color: #000;
 }
 
-a:hover{
+a:hover {
     text-shadow: 0px 4px 4px black;
 }
 
-.zoom img:hover{
+.zoom img:hover {
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
 
+/*footer social icons*/
+
+footer {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons {
+	padding: 30px;
+	font-size: 20px;
+	color: #908b8b
+}
+
 /*Media queries for small screens*/
 
 @media screen and (max-width: 899px) {
-	h1{
+	h1 {
 		font-size: 30px;
 		margin-bottom: 0;
 		padding-top: 20px;
 	}
 
-	h4{ 
+	h4 { 
 		font-size: 20px;
 		margin-bottom: 10px;
 	}
 
-	header{
+	header {
 		padding-right: 10px;
 		padding-top: 5px;
 	}
 	
-	h3{
+	h3 {
 		padding-top: 20px;
 		margin-bottom: 0;
 	}
 
-	p{
+	p {
 		padding-bottom: 30px;
 	}
 
-	.right_head{
+	.right-head {
 		padding-top: 10px;
 	}
 
-	.main1, .main2, .main3, .main4{
+	.main1, .main2, .main3, .main4 {
 	width: 100%;
 	}
 
-	.main1 img,.main2 img,.main3 img{
+	.main1 img,.main2 img,.main3 img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -172,7 +192,7 @@ a:hover{
 /*Media queries for large screen*/
 
 @media screen and (min-width: 900px){
-	.container{
+	.container {
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
